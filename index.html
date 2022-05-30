@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head-->
+<head>
+    <title>Weather_Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <header class='jumbo-addition'>
+            <h1 class="display-4"> Weather-Dashboard  </h1>
+        </header>
+        <div class="row">
+            <!-- City Search sidebar -->
+            <div class="col-sm-4 " id="sidebar">
+                <!-- search bar -->
+                <h6 id="search-header">Search for a City:</h6>
+                <div class="input-group">
+                    <!-- search input -->
+                    <input class="form-control" id="cityenter" type="text" placeholder="city name">
+                    <div class="input-group-append">
+                        <button class="btn buttonsearch" type="button"> Search       
+                    </div>
+                </div>
+                <!-- search history-->
+                <div class="search-history mt-3">
+                    <ul class="list-group ">
+                            <button class='btn'id="search0"></button>
+                            <button class='btn'id="search1"></button>
+                            <button class='btn'id="search2"></button>
+                            <button class='btn'id="search3"></button>
+                            <button class='btn'id="search4"></button>
+                            <button class='btn'id="search5"></button>
+                            <button class='btn'id="search6"></button>
+                            <button class='btn'id="search7"></button>
+                            <button class='btn'id="search8"></button>
+                            <button class='btn'id="search9"></button>
+                    </ul>
+                    <button type="button" class="btn btn-dark shadow-none mt-3" id="clearhistory">Clear History</button>
+                </div>
+            </div>
+           
+            <div class="col-sm-8">
+                
+                <div class="card card-body-color" id="current-view">
+                    <div class="card-body">
+                        <h2 id="namecity" class="card-title city-name">City name :</h2>
+                        <p id="currentdate" class="cd"></p>
+                        <img id="weathericon">
+                        <h5 class="card-info mb-2 ">Temperature:  <span id="tempcity"></span></h6>
+                        <hr>
+                        <h5 class="card-info mb-2 ">Humidity: <span id="humcity"></span></h6>
+                        <hr>
+                        <h5 class="card-info mb-2 ">Wind Speed: <span id="windspeed"></span></h6>
+                        <hr>
+                        <h5 class="card-info mb-2 ">UV Index: <span id="uv-index"></span></h6>
+
+                    </div>
+                    
+                </div>
+                <!-- 5 Day Forecast -->
+                <div id="five-day">
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col-sm-12 center">
+                <h5 class="text-white">5 Days Forecast</h5>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-sm">
+                <div class="card five-cards">
+                    <div class="card-title" id="day0">Date</div>
+                    <img class="icons" id="icon0">
+                    <p id="highday0">High:</p>
+                    <p id="lowday0">Low:</p>
+                    <p id="humday0">Humidity:</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card  five-cards">
+                    <div class="card-title" id="day1">Date</div>
+                    <img class="icons" id="icon1">
+                    <p id="highday1">High:</p>
+                    <p id="lowday1">Low:</p>
+                    <p id="humday1">Humidity:</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card  five-cards">
+                    <div class="card-title" id="day2">Date</div>
+                    <img class="icons" id="icon2">
+                    <p id="highday2">High:</p>
+                    <p id="lowday2">Low:</p>
+                    <p id="humday2">Humidity:</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card  five-cards">
+                    <div class="card-title" id="day3">Date</div>
+                    <img class="icons" id="icon3">
+                    <p id="highday3">High:</p>
+                    <p id="lowday3">Low:</p>
+                    <p id="humday3">Humidity:</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card  five-cards">
+                    <div class="card-title" id="day4">Date</div>
+                    <img class="icons" id="icon4">
+                    <p id="highday4">High:</p>
+                    <p id="lowday4">Low:</p>
+                    <p id="humday4">Humidity:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script/script.js"></script>
+
+</body>
+
+</html>

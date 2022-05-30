@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(14, 46, 46);
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+}
+.h1 {
+  font-weight:bolder;
+}
+.cityn {
+  font-size: 80px;
+}
+.cd {
+  font-size: 35px;
+}
+.jumbo-addition {
+  background-color: rgb(14, 46, 46);
+  margin: 0px;
+  padding: 20px;
+
+}
+
+header {
+  text-align: center;
+  color: white;
+}
+
+.list-group {
+  background-color: whitesmoke;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+ul li,
+form,
+p {
+  border: white;
+}
+
+ul #listcity {
+  margin: 5px 0 5px 0;
+}
+
+section button {
+  width: 200px;
+  height: 40px;
+  background-color: blue;
+}
+
+
+li {
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+ul p {
+  font-size: 20px;
+  font-weight: bold;
+}
+h6,
+h5 {
+  font-size: 40px;
+  color: white;
+}
+
+div #forescast {
+  padding-top: 1px;
+  padding-bottom: 30px;
+}
+
+div .card-body-color {
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  align-content: space-between;
+}
+
+.col-sm .card {
+  height: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid red;
+}
+
+.col-sm .card div {
+  text-align: center;
+  font-size: 0.9em;
+}
+.col-sm .card p {
+  text-align: left;
+  font-size: 0.8em;
+  color: white;
+  font-weight: bold;
+}
+
+h5 {
+  text-align: center;
+  margin-top: 5px;
+  padding: auto;
+  border-radius: 10px;
+}
+
+#weathericon {
+  width: 100px;
+}
+
+
+.col-sm-3 {
+  margin: -30px 25px 9px;
+}
+
+.five-cards {
+  background-color: rgba(84, 121, 16, 0.3);
+}
+
+.col-sm div {
+  color: white;
+  font-size: 20px;
+}
+
+
+.btn {
+  background-color: rgba(36, 153, 207, 0.3);
+  color: black;
+  font-size: 15px;
+  margin: 5px
+}
+
+.buttonsearch {
+  background-color: rgb(19, 121, 204);
+  color: black;
+  font-size: 15px; 
+  width: 100px;
+  margin:0px;
+}
+
+#cityenter {
+  padding: 20px;
+}
